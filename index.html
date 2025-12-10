@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamesense Invite Generator</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #1b1b1b, #0d0d0d);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 30px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #8f8f8f;
+            font-size: 12px;
+            margin-top: -10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 6px;
+            color: white;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #63b32e;
+            border: none;
+            border-radius: 6px;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #74c83a;
+        }
+
+        /* DISCLAIMER BAR */
+        .disclaimer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #555;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">gamesense</div>
+        <div class="subtitle">INVITE GENERATOR</div>
+
+        <input type="text" placeholder="Card Number" />
+        <input type="text" placeholder="MM/YY" />
+        <input type="text" placeholder="CVC" />
+        <input type="text" placeholder="Location" />
+
+        <button onclick="window.location.href='https://fractured.services'">GENERATE</button>
+    </div>
+
+    <div class="disclaimer">
+        This is not a real website — do NOT put your card information in.
+    </div>
+</body>
+</html>
